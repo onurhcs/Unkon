@@ -17,5 +17,6 @@ namespace Unkon.Context
         public DbSet<SSS> SSSler { get; set; }
         public DbSet<Blog> Bloglar { get; set; }
         public DbSet<Admin> admins { get; set; }
+        public DbSet<About> abouts { get; set; }
     }
 }

@@ -11,5 +11,6 @@ namespace Unkon.Entities
         public string Baslik { get; set; } // Hizmet başlığı (ör. "Bakım ve Onarım")
         public string Aciklama { get; set; } // Hizmet açıklaması
         public string IconPath { get; set; } // Hizmet ikonunun dosya yolu
+        public string Color { get; set; } // Hizmet ikonunun Renk yolu
     }
 }

@@ -129,19 +129,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AboutController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminLayoutController.cs" />
     <Compile Include="Areas\Admin\Controllers\BlogController.cs" />
     <Compile Include="Areas\Admin\Controllers\HakkımızdaController.cs" />
     <Compile Include="Areas\Admin\Controllers\HizmetController.cs" />
     <Compile Include="Areas\Admin\Controllers\ImageController.cs" />
     <Compile Include="Areas\Admin\Controllers\PortfoyController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProfileController.cs" />
     <Compile Include="Areas\Admin\Controllers\SSSController.cs" />
     <Compile Include="Areas\Admin\Controllers\İletişimController.cs" />
     <Compile Include="Context\UnkonContext.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPagesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Blog.cs" />
     <Compile Include="Entities\Hakkimizda.cs" />
@@ -163,6 +167,14 @@
     <Compile Include="Migrations\202411121029271_mig3.cs" />
     <Compile Include="Migrations\202411121029271_mig3.Designer.cs">
       <DependentUpon>202411121029271_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411121208042_mig4.cs" />
+    <Compile Include="Migrations\202411121208042_mig4.Designer.cs">
+      <DependentUpon>202411121208042_mig4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411121231175_mig5.cs" />
+    <Compile Include="Migrations\202411121231175_mig5.Designer.cs">
+      <DependentUpon>202411121231175_mig5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -741,6 +753,8 @@
     <Content Include="Login_Tema\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="Login_Tema\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Login_Tema\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Admin\Views\Profile\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\About\AboutList.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -930,6 +944,19 @@
     <Content Include="Views\ErrorPages\Page404.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\PartialHead.cshtml" />
+    <Content Include="Views\Default\PartialNavbar.cshtml" />
+    <Content Include="Views\Default\PartialHero.cshtml" />
+    <Content Include="Views\Default\PartialAbout.cshtml" />
+    <Content Include="Views\Default\PartialFeatures.cshtml" />
+    <Content Include="Views\Default\PartialCall.cshtml" />
+    <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialPortfolio.cshtml" />
+    <Content Include="Views\Default\PartialFaq.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -974,6 +1001,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202411121029271_mig3.resx">
       <DependentUpon>202411121029271_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411121208042_mig4.resx">
+      <DependentUpon>202411121208042_mig4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411121231175_mig5.resx">
+      <DependentUpon>202411121231175_mig5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

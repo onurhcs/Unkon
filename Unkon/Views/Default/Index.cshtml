@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead","Default")
+
+<body class="index-page">
+
+    @Html.Action("PartialNavbar", "Default")
+
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        @Html.Action("PartialHero", "Default")      @**@
+        <!-- /Hero Section -->
+        <!-- About Section -->
+        @Html.Action("PartialAbout", "Default")     @*+*@
+        <!-- /About Section -->
+        <!-- Features Section -->
+        @Html.Action("PartialFeatures", "Default")  @*+*@
+        <!-- /Features Section -->
+        <!-- Call To Action Section -->
+        @Html.Action("PartialCall", "Default")      @*İndexten Veri Alıcak Bize Ulaşına Yol Verilicek.*@
+        <!-- /Call To Action Section -->
+        <!-- Services Section -->
+        @Html.Action("PartialService", "Default")   @*+*@
+        <!-- Hizmetler Bölümü Bitiş -->
+        <!-- /Services Section -->
+        <!-- Portfolio Section -->
+        @Html.Action("PartialPortfolio", "Default") @*-*@
+        <!-- /Portfolio Section -->
+        <!-- Faq Section -->
+        @Html.Action("PartialFaq", "Default")       @*+*@
+        <!-- Contact Section -->
+        @Html.Action("PartialContact", "Default")   @*+*@
+    </main>
+
+    @Html.Action("PartialFooter", "Default")
+    @Html.Action("PartialScript", "Default")
+
+
+
+
+</body>
+
+</html>
