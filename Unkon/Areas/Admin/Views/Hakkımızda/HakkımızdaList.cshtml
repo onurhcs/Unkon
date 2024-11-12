@@ -1,0 +1,79 @@
+﻿@model List<Unkon.Entities.Hakkimizda>
+@{
+    ViewBag.Title = "HakkımızdaList";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="container">
+    <div class="page-inner">
+        <div class="page-header">
+            <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                    <a href="#">
+                        <i class="icon-home"></i>
+                    </a>
+                </li>
+                <li class="separator">
+                    <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Hakkımızda</a>
+                </li>
+                <li class="separator">
+                    <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Hizmetler</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Hakkımda Düzenle</div>
+                    </div>
+                    <div class="card-body">
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Başlık</th>
+                                    <th scope="col">İcerik</th>
+                                    <th scope="col">Alt Başlık</th>
+                                    <th scope="col">Alt Başlık1</th>
+                                    <th scope="col">Alt Başlık2</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Baslik</td>
+                                        <td>@item.Icerik</td>
+                                        <td>@item.AltBaslik</td>
+                                        <td>@item.AltBaslik1</td>
+                                        <td>@item.AltBaslik2</td>
+                                        <td><a href="#" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="#" class="btn btn-success">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn-primary">Yeni İçerik Girşi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
